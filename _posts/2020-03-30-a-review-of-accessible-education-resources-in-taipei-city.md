@@ -4,7 +4,7 @@ layout: post
 ---
 
 ### PART I OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
-
+![cover image](/tp_transportation_network/images/cover_image.png)
 Transportation modeling is at the core of urban transportation planning process. It attempts to simulate human behavior of travelling, estimates the impact of traffic on existing transportation networks, and provides reference for future infrastructure improvement, such as new roads or change of public transit system, for the next decades.
 
 
@@ -12,7 +12,7 @@ The conventional transportation modeling consists of four-step processes: trip g
 
 
 ## THE PROBLEM
-&emsp;
+
 *A great number of variables are taken into consideration in this forecasting process which make the models and their calibration extremely sophisticated.* Trip generation model uses population as well as school population, household numbers, income, car ownership, employment as key variables. A mysterious impedance function is created with distance and travelling cost in trip distribution model. Modal split model uses travel time value of different modes of vehicle, car maintenance cost, fuel charges, parking fees, etc. to construct the utility function of human-being. Traffic assignment establishes capacity restraint model of each travel mode to assign the trips to the real world network.
 
 This study, consisting of a series of posts, will use the analysis methods and tools inspired by Social Network Analysis to offer an alternative angle of view on the urban transportation networks. This study will try to answer the question:
@@ -20,10 +20,10 @@ This study, consisting of a series of posts, will use the analysis methods and t
 ***Where are the key nodes within the transportation network as well as those in greatest need of improvement?***
 
 Please note that this study is NOT for reviewing the conventional models or building a new one. This would require a large amount of data to provide a solid and complete review, which is far beyond the scope of this study.
-&emsp;
-&emsp;
+
+
 ## THE METHODOLOGY AND ORGANIZATION OF THIS STUDY
-&emsp;
+
 **Social Network Analysis (SNA)** has been widely used in sociology, biology, information communication, etc. for decades. A network (or a graph) is established with a set of nodes and links (or edges) that connect them. SNA offers a collection of quantitative methods and tools to break into the networks and could provide valuable insights into urban transportation networks. Among various SNA methods, **centrality** is the most commonly used indicator to measure the importance of nodes within a network and identify the most influential one(s). *While the study tries to solve the problem where the key traffic nodes are in the urban area, centrality serves as the best indicator throughout this series of posts.*
 
 There are several different types of centrality such as degree, closeness, betweenness and eigenvector centralities, each of them offering unique insights into the network. This study will discuss these centralities, their different ways of measurements and their strength and limitation in later sections.
@@ -45,22 +45,22 @@ Following part one and two, the third part of this study continues to use the SN
 **4. Implications for urban transportation planning**
 
 This part focuses on answering the question asked in the beginning of the study with the findings from previous parts: to single out the traffic nodes and edges that are in the greatest need of improvement.
-&emsp;
-&emsp;
+
+
 ## STUDY AREA
 
 The study area includes the 456 lǐ’s (or urban villages/neighborhoods, the smallest unit of election administration in Taiwan) of Taipei City as nodes (or TAZs).
 
 Previous studies of conventional transportation modeling in Greater Taipei Area (such as those conducted by Taipei Rapid Transit Corp.) usually covers not only Taipei City, but also New Taipei City, Keelung, and Taoyuan City. Qū’s (or districts, the upper administrative subdivision above villages) are used as TAZs in these studies. However, using villages as basic units of the study has the strength to look into more details in the network that will greatly improve the visualization of the research results and identify the whereabouts of the key nodes much more accurately. Moreover, *the nodes’ coordinates on the map will significantly affect the weights assigned to edges and thus the results in the third part of the study, which is why villages, rather than districts, is a better and necessary choice.*
-　
+
 
 ### Quick facts about Taipei City, Taiwan
 
 Taipei City locates in East Asia and is the political and socio-economic capital of Taiwan. Taipei City has a land area of 271.8 square kilometers (about the same size as Orlando, Florida), population of 2.6 million (close to the figure of Chicago), and a population density almost the same as New York City. The GDP (PPP) of Taipei City is estimated to be $300 billion, slightly higher than Atlanta, GA. Chinese Mandarin is the official language, which is why in the rest of this study you will see Chinese characters. This study will try to convert to English when necessary for better reading.
 
 ![Quick facts about Taipei City, Taiwan](/tp_transportation_network/images/tp_location.png)
-　
-　
+
+
 ## THE NETWORK PRESENTATION OF TAIPEI CITY
 
 ### The Nodes: GeoJSON of Taipei Villages
@@ -71,7 +71,7 @@ Below map shows the 456 villages on the map which you may interact with it(i.e. 
 
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/tp_map" %}
 
-　
+
 ### The Edges: Connections between villages
 
 After the base map and the 456 villages as nodes are created, the next step is to check all pairs of nodes to find out whether there’s a connection. This study defines *an edge between two nodes exists if and only if the two polygons represented by the two nodes share at least one segment.* More specifically, since each polygon is comprised of a set of coordinates, a shared segment simply means that there are at least two common coordinates in both polygons.
@@ -93,7 +93,7 @@ This study runs the checking on each polygon with the other 455 ones. Below tabl
 | 454 | 北投區大屯里 | [442, 443, 445, 452, 455]              |
 | 455 | 北投區湖田里 | [409, 452, 453, 454]                   |
 
-　
+
 ### The basic representation of the urban network
 
 Now with the nodes and edges, a network is presented. Below image is created with **NetworkX** to visualize this urban transportation network of Taipei City. NetworkX is a Python library for studying graphs and networks, which will be used in the next sections of this part of study. However such image is not intuitive for understanding the structure of the network.
@@ -103,13 +103,13 @@ Now with the nodes and edges, a network is presented. Below image is created wit
 I re-create the visualization of the network on the map (showing below), by locating the 456 nodes with their coordinates and connecting the nodes where an edge exists. This map helps find nodes and edges in a certain area more efficiently. Although the analysis results in the next sections won’t be any different whether to use a more friendly interface or not, this stduy hopes to provide another look at the network which brings better understanding for policy makers and for those who are interested.
 
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/plain_networks" %}
-　
-　
+
+
 ## NETWORK MEASUREMENTS (1): CENTRALITY
 
 Centrality is useful in identifying the key nodes in a network and providing quantitative measures of the importance of the nodes so that these nodes can even be ranked. There are several different types of centrality, which measure and represent the “importance” in different aspects.
 
-　
+
 ### Degree Centrality
 
 *Degree centrality simply counts the number of edges each node has.* A higher degree centrality means that the node links to more nodes. Below table shows the degree centralities of the top and bottom 10 nodes in the network, while the image shows how these nodes with different centralities distribute on the map. The bigger the nodes, the higher the degree centralities.
@@ -135,7 +135,7 @@ Despite the fact that degree centrality is relatively easy to understand, it is 
 
 2. The land areas of these 456 villages differ a lot. A bigger village could have a higher degree centrality simply because it shares segments with more smaller villages. Moreover, bigger villages are more likely in the peripheries of the city which could be hilly and inconvenient in traffic. In other words, a route may not exist between two adjacent villages in the real world. I’ll discuss more in detail in the second part of this study.
 
-　
+
 ### Closeness Centrality
 
 Closeness centrality denotes the reciprocal of the sum of the shortest paths from one node to all other nodes in a network. Such definition is perhaps literally closest to the word “centrality”, like the geometric center. *A node with higher closeness centrality has shorter average distance to all other nodes.* This makes it a good indicator to a potentially good spot for regional logistics centers or emergency evacuates in the real world.
@@ -159,7 +159,7 @@ Below table shows the villages with the highest and lowest closeness centralitie
 
 Unsurprisingly, the nodes closer to the geometric center of the City have higher values of closeness centralities. However it’s worth noting that some nodes close to the east peripheries seem to have higher values than expected, forming some sort of “eastern corridor” that allows nodes to reach to others faster in an unweighted graph than in the real world. The existence of this “corridor” will be examined in the next part.
 
-　
+
 ### Betweenness Centrality
 
 Betweenness centrality is arguably the most useful method in SNA to show the “traffic” happening within a network. To calculate the betweenness centrality, all shortest paths between every pair of nodes must be identified first. The betweenness centrality of a node is then defined as the times all shortest paths pass the node by. In other words, there are (456x455)/2 shortest paths among 456 nodes in Taipei transportation network. *The highest-betweenness node means that it’s most likely to go through that village when moving in the city.* That is, it has the most impact on the network if the node is removed from the network (or when the village is blocked somehow).
@@ -182,8 +182,8 @@ The top and bottom 10 villages are shown in below table. Below image illustrates
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/plain_betweenness_centrality" %}
 
 On the map there seems to exist two major pathways, one north-south and the other east-west, connecting the bigger nodes. Smaller nodes may move along branches to flow into the mainstreams (pathways) which allow them to move more quickly and efficiently to the destination in the network. Whether or not these pathway are present in the real world will be reviewed next.
-　
-　
+
+
 ## NETWORK MEASUREMENTS (2): EDGE BETWEENNESSES CENTRALITY
 
 While the betweenness centrality shows the traffic passing through the nodes, the edge betweenness centrality, as suggested by its name, measures the traffic through the edges. Similar to the definition of betweenness centrality, *edge betweenness counts the times all shortest paths between every pair of nodes in the network pass through that edge.* The higher the edge betweenness, the more likely the edge will be used while moving from one node to another. In other words, if a high-betweenness edge is removed from the network, many shortest paths in the network will have to be re-routed.
@@ -206,8 +206,8 @@ Below table shows the edges (represented by two connected nodes) with the highes
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/plain_edge_betweenness" %}
 
 The map showing the edge betweenness centrality provides a more intuitive visualization of the transportation network in the real world. The above-mentioned north-south and east-west pathways into which smaller branches flow are better shown. Moreover, as discussed in the closeness centrality section, the “eastern corridor” that connects bigger villages along eastern peripheries is also clearer on the map. This explains why these nodes have higher centrality than expected, though it may not be the case in the real world.
-　
-　
+
+
 ## NETWORK MEASUREMENTS (3): COMMUNITIES
 
 Community detection is one important study of SNA to understanding the structure of complex networks. *A community is a set of nodes that connect to each other more densely internally than externally with another community.* Community detection helps the understanding of the real-world transportation networks and the planning of the hierarchy of roads that link within local neighborhoods and between urban centers.
@@ -223,8 +223,8 @@ Below image shows the community detection process from when there are 2 communit
 ![Community detection of Taipei transportation network](/tp_transportation_network/images/community_detection_image.png)
 
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/plain_communities" %}
-　
-　
+
+
 ### Comparing with the administrative districts in the real world
 
 There are 12 districts in Taipei City, which is the reason I run the community detection process until there are 12 communities. Let’s see how they compare with each other. The left image below is the result from the Girvan–Newman algorithm, and the right shows the current districts.
@@ -234,8 +234,8 @@ There are 12 districts in Taipei City, which is the reason I run the community d
 Despite the similarities of the communities/districts’ whereabouts shared between both images at a glance however, the result from the algorithm has one community less in the downtown than that from the actual districts (the blue, green and yellow from the left v.s. the green, orange, red and black from the right). Instead, one extra community is assigned to the pink area around western uptown.
 
 The pink community called Siā-á from the algorithm is a peninsula area surrounded by rivers. Siā-á has been suffered from floods for a long time and is relatively isolated from the City. The algorithm interestingly detects this area as a community through the process.
-　
-　
+
+
 ## SUMMARY OF PART ONE
 
 This study provides an alternative perspective to look at the urban transportation network with a Social Network Analysis approach.
@@ -245,8 +245,8 @@ The first part of the study establishes an unweighted and undirected network of 
 This study then uses SNA methods and tools on the network. Centrality is used to identify the key nodes in the network, which may indicates the important traffic zone in the real world; similarly the edges’ betweenness centrality are measured to find the potentially busy routes; and community detection algorithm groups nodes that are densely internal-connected, offering a reference to the planning of different levels of transportation within and between communities.
 
 In the next part of this study, the urban transportation network will be reviewed and revised. Weights and directions will be defined and assigned to the nodes and edges. The location of the nodes will also be reviewed and updated with new coordinates so as to provide a better simulation of the real world.
-　
-　
+
+
 ### SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
