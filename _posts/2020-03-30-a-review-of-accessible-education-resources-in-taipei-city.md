@@ -9,8 +9,8 @@ Transportation modeling is at the core of urban transportation planning process.
 
 
 The conventional transportation modeling consists of four-step processes: trip generation, trip distribution, modal split and traffic assignment. First the target urban area is divided into tens or hundreds of traffic analysis zones (TAZs). Based on the socio-economic condition of each TAZ, the trips originated from each zone are generated as well as those destined for. The next step, trip distribution, constructs the estimated origin-destination (O-D) matrix. Take a study area of 100 TAZs for instance, a 100 x 100 O-D matrix will be established, where each cell in the matrix represents the total trips from one TAZ to another. This matrix will then be split, based on the choice of vehicle modes, into trips of car, bus or subway. In the last step, these trips are assigned to the roads in the real-world transportation network for the estimation of traffic flows, speed and capacity.
-&emsp;
-&emsp;
+
+
 ## THE PROBLEM
 &emsp;
 *A great number of variables are taken into consideration in this forecasting process which make the models and their calibration extremely sophisticated.* Trip generation model uses population as well as school population, household numbers, income, car ownership, employment as key variables. A mysterious impedance function is created with distance and travelling cost in trip distribution model. Modal split model uses travel time value of different modes of vehicle, car maintenance cost, fuel charges, parking fees, etc. to construct the utility function of human-being. Traffic assignment establishes capacity restraint model of each travel mode to assign the trips to the real world network.
@@ -23,7 +23,7 @@ Please note that this study is NOT for reviewing the conventional models or buil
 &emsp;
 &emsp;
 ## THE METHODOLOGY AND ORGANIZATION OF THIS STUDY
-
+&emsp;
 **Social Network Analysis (SNA)** has been widely used in sociology, biology, information communication, etc. for decades. A network (or a graph) is established with a set of nodes and links (or edges) that connect them. SNA offers a collection of quantitative methods and tools to break into the networks and could provide valuable insights into urban transportation networks. Among various SNA methods, **centrality** is the most commonly used indicator to measure the importance of nodes within a network and identify the most influential one(s). *While the study tries to solve the problem where the key traffic nodes are in the urban area, centrality serves as the best indicator throughout this series of posts.*
 
 There are several different types of centrality such as degree, closeness, betweenness and eigenvector centralities, each of them offering unique insights into the network. This study will discuss these centralities, their different ways of measurements and their strength and limitation in later sections.
@@ -45,8 +45,8 @@ Following part one and two, the third part of this study continues to use the SN
 **4. Implications for urban transportation planning**
 
 This part focuses on answering the question asked in the beginning of the study with the findings from previous parts: to single out the traffic nodes and edges that are in the greatest need of improvement.
-　
-　
+&emsp;
+&emsp;
 ## STUDY AREA
 
 The study area includes the 456 lǐ’s (or urban villages/neighborhoods, the smallest unit of election administration in Taiwan) of Taipei City as nodes (or TAZs).
