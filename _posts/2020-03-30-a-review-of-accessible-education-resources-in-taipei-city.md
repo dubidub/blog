@@ -1,8 +1,7 @@
 ---
-title:  "THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS (1): A Social Network Analysis Approach"
+title:  "An SNA Approach on Transportation Networks"
 layout: post
 ---
-All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
 
 ## A BRIEF INTRODUCTION TO TRANSPORTATION PLANNING PROCESS
 
@@ -44,10 +43,6 @@ Following part one and two, the third part of this study continues to use the SN
 
 This part focuses on answering the question asked in the beginning of the study with the findings from previous parts: to single out the traffic nodes and edges that are in the greatest need of improvement.
 
-5. Wishlist: solving the famous Travelling Salesman Problem
-
-It is hard to resist the temptation to crack into the famous unsolvable algorithm problems when you got a graph in hand. This study wishes to start the tryout and see how it goes.
-
 
 ## STUDY AREA
 
@@ -60,6 +55,7 @@ Previous studies of conventional transportation modeling in Greater Taipei Area 
 Taipei City locates in East Asia and is the political and socio-economic capital of Taiwan. Taipei City has a land area of 271.8 square kilometers (about the same size as Orlando, Florida), population of 2.6 million (close to the figure of Chicago), and a population density almost the same as New York City. The GDP (PPP) of Taipei City is estimated to be $300 billion, slightly higher than Atlanta, GA. Chinese Mandarin is the official language, which is why in the rest of this study you will see Chinese characters. This study will try to convert to English when necessary for better reading.
 
 No alt text provided for this image
+![Quick facts about Taipei City, Taiwan](/assets/transportation/tp_location.png)
 
 ## THE NETWORK PRESENTATION OF TAIPEI CITY
 
@@ -176,3 +172,6 @@ The first part of the study establishes an unweighted and undirected network of 
 This study then uses SNA methods and tools on the network. Centrality is used to identify the key nodes in the network, which may indicates the important traffic zone in the real world; similarly the edges’ betweenness centrality are measured to find the potentially busy routes; and community detection algorithm groups nodes that are densely internal-connected, offering a reference to the planning of different levels of transportation within and between communities.
 
 In the next part of this study, the urban transportation network will be reviewed and revised. Weights and directions will be defined and assigned to the nodes and edges. The location of the nodes will also be reviewed and updated with new coordinates so as to provide a better simulation of the real world.
+
+
+All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
