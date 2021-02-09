@@ -1,5 +1,5 @@
 ---
-title:  "Closeness Centrality in the Real-World Weighted and Directed Network"
+title:  "Betweenness Centrality in the Real-World Weighted and Directed Network"
 layout: post
 author: adu
 ---
@@ -26,7 +26,7 @@ More specifically, the betweenness centrality of a node is defined as:
 
 ![euqation3_2_1](/tp_transportation_network/images/euqation3_2_1.png)
 
-where *BC(v)* is the betweenness centrality of node *v*; *σ(s,t)* is the number of all shortest paths from node *s* to node *t*; *σ(s,t|v)* is the number of these shortest paths that pass through node *v*; and node *s, t, v* belong to the same network *V* where *s≠t≠v*.
+where *BC(v)* is the betweenness centrality of node *v*; *σ(s,t)* is the number of all shortest paths from node *s* to node *t*; *σ(s,t&#124;v)* is the number of these shortest paths that pass through node *v*; and node *s, t, v* belong to the same network *V* where *s≠t≠v*.
 
 Theoretically there could be more than one shortest path between any two nodes. Assume that 5 shortest paths exist between node *s* and *t*, where only 2 of them pass through *v*. The probability of *v* being used is then 0.4. In this study, the betweenness of node v is calculated by first summing up all these probabilities between all pairs of nodes (*s,t*), which are then divided by 456x455 for normalization. The final score is the probability of node v being used in all shortest paths.
 
@@ -34,7 +34,7 @@ Similarly, *the edge betweenness centrality of an edge is the likelihood of the 
 
 ![euqation3_2_2](/tp_transportation_network/images/euqation3_2_2.png)
 
-where *EBC(e)* is the edge betweenness centrality of edge *e*; and *σ(s,t|e)* is the number of shortest paths between node *s* and *t* that pass through *e* where *s≠t*.
+where *EBC(e)* is the edge betweenness centrality of edge *e*; and *σ(s,t&#124;e)* is the number of shortest paths between node *s* and *t* that pass through *e* where *s≠t*.
 
 This study will measure and discuss the betweenness centrality of both nodes and edges, respectively.
 
