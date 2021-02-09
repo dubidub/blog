@@ -37,7 +37,7 @@ First, a network (or a set of nodes and edges to be more specific) of the study 
 
 **2. Welcome to the real world: assigning weights and directions to the network**
 
-The network structure in the real world is a lot different. The second part of this study assigns weights and directions to the nodes and edges of the transportation network so as to better represent the real world. **Geolocation API** provided by **Google Maps Platform** is used to calibrate the coordinates of the nodes; the weights and direction of edges are acquired by **HERE Routing API**; and the weights of nodes are assigned by using the socio-economic data of the study area.
+The network structure in the real world is a lot different. The second part of this study assigns weights and directions to the nodes and edges of the transportation network so as to better represent the real world. **Geocoding API** provided by **Google Maps Platform** is used to calibrate the coordinates of the nodes; the weights and direction of edges are acquired by **HERE Routing API**; and the weights of nodes are assigned by using the socio-economic data of the study area.
 
 **3. Measurements of the weighted and directed network**
 
