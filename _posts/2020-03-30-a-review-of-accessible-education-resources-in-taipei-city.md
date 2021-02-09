@@ -74,7 +74,7 @@ This study runs the checking on each polygon with the other 455 ones. Below tabl
 
 No alt text provided for this image
 
-|  NO | dist_neigh  | neighborhoods                          |
+|  NO | village     | neighborhoods                          |
 |-----|-------------|----------------------------------------|
 |   0 | 松山區莊敬里 | [3, 4, 5, 8, 141, 143, 167, 327, 352]  |
 |   1 | 松山區東榮里 | [2, 7, 8]                              |
@@ -97,7 +97,7 @@ Now with the nodes and edges, a network is presented. Below image is created wit
 
 I re-create the visualization of the network on the map (showing below), by locating the 456 nodes with their coordinates and connecting the nodes where an edge exists. This map helps find nodes and edges in a certain area more efficiently. Although the analysis results in the next sections won’t be any different whether to use a more friendly interface or not, this stduy hopes to provide another look at the network which brings better understanding for policy makers and for those who are interested.
 
-No alt text provided for this image
+{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_networks" %}
 
 
 ## NETWORK MEASUREMENTS (1): CENTRALITY
@@ -108,8 +108,20 @@ Centrality is useful in identifying the key nodes in a network and providing qua
 
 *Degree centrality simply counts the number of edges each node has.* A higher degree centrality means that the node links to more nodes. Below table shows the degree centralities of the top and bottom 10 nodes in the network, while the image shows how these nodes with different centralities distribute on the map. The bigger the nodes, the higher the degree centralities.
 
-No alt text provided for this image
-No alt text provided for this image
+|    | Top10       |   c_degree | Bottom10    |   c_degree |
+|----|-------------|------------|-------------|------------|
+|  0 | 北投區八仙里 |  0.0263736 | 萬華區榮德里 | 0.0043956  |
+|  1 | 大安區學府里 |  0.0263736 | 萬華區柳鄉里 | 0.0043956  |
+|  2 | 士林區福林里 |  0.0241758 | 文山區景美里 | 0.0043956  |
+|  3 | 中山區集英里 |  0.021978  | 文山區試院里 | 0.0043956  |
+|  4 | 南港區九如里 |  0.021978  | 文山區政大里 | 0.0043956  |
+|  5 | 松山區精忠里 |  0.021978  | 士林區平等里 | 0.0043956  |
+|  6 | 中山區大佳里 |  0.021978  | 大安區群英里 | 0.0043956  |
+|  7 | 松山區莊敬里 |  0.0197802 | 南港區舊莊里 | 0.0043956  |
+|  8 | 內湖區港墘里 |  0.0197802 | 信義區正和里 | 0.00659341 |
+|  9 | 北投區建民里 |  0.0197802 | 士林區仁勇里 | 0.00659341 |
+
+{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_degree_centrality" %}
 
 Despite the fact that degree centrality is relatively easy to understand, it is not a very good measure to identify the key transportation nodes in the real world, in that:
 
@@ -123,8 +135,20 @@ Closeness centrality denotes the reciprocal of the sum of the shortest paths fro
 
 Below table shows the villages with the highest and lowest closeness centralities respectively. The network is also shown in the image, where the radius of a node represents its centrality value.
 
-No alt text provided for this image
-No alt text provided for this image
+|    | Top10       |   c_closeness | Bottom10    |   c_closeness |
+|----|-------------|---------------|-------------|---------------|
+|  0 | 中山區劍潭里 |      0.157005 | 萬華區榮德里 |     0.0717892 |
+|  1 | 中山區大佳里 |      0.156411 | 萬華區銘德里 |     0.0753311 |
+|  2 | 松山區莊敬里 |      0.154028 | 萬華區華中里 |     0.0772758 |
+|  3 | 中山區新庄里 |      0.152072 | 萬華區錦德里 |     0.0779376 |
+|  4 | 松山區精忠里 |      0.151717 | 萬華區孝德里 |     0.0793512 |
+|  5 | 中山區圓山里 |      0.151414 | 北投區文化里 |     0.0805452 |
+|  6 | 松山區中華里 |      0.14879  | 萬華區保德里 |     0.0813953 |
+|  7 | 中山區集英里 |      0.147871 | 北投區智仁里 |     0.0817757 |
+|  8 | 中山區成功里 |      0.146727 | 文山區景美里 |     0.0824873 |
+|  9 | 松山區中正里 |      0.146491 | 北投區稻香里 |     0.0825172 |
+
+{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_closeness_centrality" %}
 
 Unsurprisingly, the nodes closer to the geometric center of the City have higher values of closeness centralities. However it’s worth noting that some nodes close to the east peripheries seem to have higher values than expected, forming some sort of “eastern corridor” that allows nodes to reach to others faster in an unweighted graph than in the real world. The existence of this “corridor” will be examined in the next part.
 
@@ -134,8 +158,20 @@ Betweenness centrality is arguably the most useful method in SNA to show the “
 
 The top and bottom 10 villages are shown in below table. Below image illustrates the network where the radius of a node represents its value of centrality.
 
-No alt text provided for this image
-No alt text provided for this image
+|    | Top10       |   c_betweenness | Bottom10    |   c_betweenness |
+|----|-------------|-----------------|-------------|-----------------|
+|  0 | 中山區集英里 |        0.225073 | 士林區仁勇里 |     0           |
+|  1 | 中山區劍潭里 |        0.209064 | 文山區景美里 |     0           |
+|  2 | 中山區圓山里 |        0.200971 | 大安區群英里 |     0           |
+|  3 | 中正區黎明里 |        0.200193 | 文山區明興里 |     0           |
+|  4 | 中山區民安里 |        0.198732 | 文山區政大里 |     0           |
+|  5 | 士林區福林里 |        0.18117  | 松山區新益里 |     0           |
+|  6 | 松山區莊敬里 |        0.178926 | 南港區舊莊里 |     0           |
+|  7 | 中山區大佳里 |        0.159007 | 文山區試院里 |     0           |
+|  8 | 大安區學府里 |        0.150363 | 萬華區榮德里 |     4.84097e-06 |
+|  9 | 中正區建國里 |        0.129745 | 北投區文林里 |     5.16371e-06 |
+
+{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_betweenness_centrality" %}
 
 On the map there seems to exist two major pathways, one north-south and the other east-west, connecting the bigger nodes. Smaller nodes may move along branches to flow into the mainstreams (pathways) which allow them to move more quickly and efficiently to the destination in the network. Whether or not these pathway are present in the real world will be reviewed next.
 
@@ -146,8 +182,20 @@ While the betweenness centrality shows the traffic passing through the nodes, th
 
 Below table shows the edges (represented by two connected nodes) with the highest and lowest edge betweenness in the network. All edges are also shown in the image where thicker edges have higher betweenness.
 
-No alt text provided for this image
-No alt text provided for this image
+|    | Top10_origin  | Top10_destination  |   edge_betweenness | Bottom10_origin  | Bottom10_destination  |   edge_betweenness |
+|----|---------------|--------------------|--------------------|------------------|-----------------------|--------------------|
+|  0 | 中山區民安里   | 中山區集英里        |          0.191374  | 文山區萬隆里      | 文山區萬和里           |        1.44592e-05 |
+|  1 | 中山區集英里   | 中山區圓山里        |          0.182664  | 文山區樟樹里      | 文山區樟文里           |        1.9279e-05  |
+|  2 | 中山區民安里   | 中正區黎明里        |          0.146025  | 萬華區萬壽里      | 萬華區西門里           |        2.24921e-05 |
+|  3 | 中山區劍潭里   | 士林區福林里        |          0.134018  | 士林區社園里      | 士林區永倫里           |        2.46725e-05 |
+|  4 | 中山區圓山里   | 中山區劍潭里        |          0.129222  | 萬華區綠堤里      | 萬華區華江里           |        2.80348e-05 |
+|  5 | 中正區黎明里   | 中正區建國里        |          0.111785  | 中山區行仁里      | 中山區行孝里           |        3.85579e-05 |
+|  6 | 大安區民炤里   | 大安區民輝里        |          0.0986036 | 士林區蘭雅里      | 士林區天祿里           |        3.95601e-05 |
+|  7 | 南港區九如里   | 文山區博嘉里        |          0.098478  | 內湖區麗山里      | 內湖區港都里           |        4.02273e-05 |
+|  8 | 大安區龍門里   | 大安區學府里        |          0.0974406 | 文山區順興里      | 文山區樟腳里           |        4.08119e-05 |
+|  9 | 中山區大佳里   | 中山區劍潭里        |          0.0971392 | 中山區下埤里      | 中山區行仁里           |        4.20924e-05 |
+
+{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_edge_betweenness" %}
 
 The map showing the edge betweenness centrality provides a more intuitive visualization of the transportation network in the real world. The above-mentioned north-south and east-west pathways into which smaller branches flow are better shown. Moreover, as discussed in the closeness centrality section, the “eastern corridor” that connects bigger villages along eastern peripheries is also clearer on the map. This explains why these nodes have higher centrality than expected, though it may not be the case in the real world.
 
@@ -164,14 +212,15 @@ The edges with high betweenness can be seen as “bridges” that connect differ
 
 Below image shows the community detection process from when there are 2 communities to 12 different non-overlapping communities. The result provides a reference for the planning of the transportation hierarchy within and between the communities.
 
-No alt text provided for this image
-No alt text provided for this image
+![Community detection of Taipei transportation network](/tp_transportation_network/images/community_detection_image.png)
+
+{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_communities" %}
 
 ### Comparing with the administrative districts in the real world
 
 There are 12 districts in Taipei City, which is the reason I run the community detection process until there are 12 communities. Let’s see how they compare with each other. The left image below is the result from the Girvan–Newman algorithm, and the right shows the current districts.
 
-No alt text provided for this image
+![Comparison between detected communities and administrative districts](/tp_transportation_network/images/communities_comparison.png)
 
 Despite the similarities of the communities/districts’ whereabouts shared between both images at a glance however, the result from the algorithm has one community less in the downtown than that from the actual districts (the blue, green and yellow from the left v.s. the green, orange, red and black from the right). Instead, one extra community is assigned to the pink area around western uptown.
 
@@ -187,5 +236,7 @@ This study then uses SNA methods and tools on the network. Centrality is used to
 
 In the next part of this study, the urban transportation network will be reviewed and revised. Weights and directions will be defined and assigned to the nodes and edges. The location of the nodes will also be reviewed and updated with new coordinates so as to provide a better simulation of the real world.
 
+
+### SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
