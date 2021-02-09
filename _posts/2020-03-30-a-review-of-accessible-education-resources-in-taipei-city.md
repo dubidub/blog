@@ -4,7 +4,7 @@ layout: post
 ---
 
 ### PART I OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
-
+  
 Transportation modeling is at the core of urban transportation planning process. It attempts to simulate human behavior of travelling, estimates the impact of traffic on existing transportation networks, and provides reference for future infrastructure improvement, such as new roads or change of public transit system, for the next decades. The conventional transportation modeling consists of four-step processes: trip generation, trip distribution, modal split and traffic assignment. First the target urban area is divided into tens or hundreds of traffic analysis zones (TAZs). Based on the socio-economic condition of each TAZ, the trips originated from each zone are generated as well as those destined for. The next step, trip distribution, constructs the estimated origin-destination (O-D) matrix. Take a study area of 100 TAZs for instance, a 100 x 100 O-D matrix will be established, where each cell in the matrix represents the total trips from one TAZ to another. This matrix will then be split, based on the choice of vehicle modes, into trips of car, bus or subway. In the last step, these trips are assigned to the roads in the real-world transportation network for the estimation of traffic flows, speed and capacity.
 
 
@@ -50,11 +50,13 @@ The study area includes the 456 lǐ’s (or urban villages/neighborhoods, the sm
 
 Previous studies of conventional transportation modeling in Greater Taipei Area (such as those conducted by Taipei Rapid Transit Corp.) usually covers not only Taipei City, but also New Taipei City, Keelung, and Taoyuan City. Qū’s (or districts, the upper administrative subdivision above villages) are used as TAZs in these studies. However, using villages as basic units of the study has the strength to look into more details in the network that will greatly improve the visualization of the research results and identify the whereabouts of the key nodes much more accurately. Moreover, *the nodes’ coordinates on the map will significantly affect the weights assigned to edges and thus the results in the third part of the study, which is why villages, rather than districts, is a better and necessary choice.*
 
+
 ### Quick facts about Taipei City, Taiwan
 
 Taipei City locates in East Asia and is the political and socio-economic capital of Taiwan. Taipei City has a land area of 271.8 square kilometers (about the same size as Orlando, Florida), population of 2.6 million (close to the figure of Chicago), and a population density almost the same as New York City. The GDP (PPP) of Taipei City is estimated to be $300 billion, slightly higher than Atlanta, GA. Chinese Mandarin is the official language, which is why in the rest of this study you will see Chinese characters. This study will try to convert to English when necessary for better reading.
 
 ![Quick facts about Taipei City, Taiwan](/tp_transportation_network/images/tp_location.png)
+
 
 ## THE NETWORK PRESENTATION OF TAIPEI CITY
 
@@ -65,6 +67,7 @@ In my previous study regarding accessible education resources, I used the [GeoJS
 Below map shows the 456 villages on the map. You may click on the image to view the original map which you can interact with (i.e. zoom in&out, click on the label, etc.).
 
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/tp_map" %}
+
 
 ### The Edges: Connections between villages
 
@@ -89,6 +92,7 @@ No alt text provided for this image
 | 454 | 北投區大屯里 | [442, 443, 445, 452, 455]              |
 | 455 | 北投區湖田里 | [409, 452, 453, 454]                   |
 
+
 ### The basic representation of the urban network
 
 Now with the nodes and edges, a network is presented. Below image is created with **NetworkX** to visualize this urban transportation network of Taipei City. NetworkX is a Python library for studying graphs and networks, which will be used in the next sections of this part of study. However such image is not intuitive for understanding the structure of the network.
@@ -103,6 +107,7 @@ I re-create the visualization of the network on the map (showing below), by loca
 ## NETWORK MEASUREMENTS (1): CENTRALITY
 
 Centrality is useful in identifying the key nodes in a network and providing quantitative measures of the importance of the nodes so that these nodes can even be ranked. There are several different types of centrality, which measure and represent the “importance” in different aspects.
+
 
 ### Degree Centrality
 
@@ -129,6 +134,7 @@ Despite the fact that degree centrality is relatively easy to understand, it is 
 
 2. The land areas of these 456 villages differ a lot. A bigger village could have a higher degree centrality simply because it shares segments with more smaller villages. Moreover, bigger villages are more likely in the peripheries of the city which could be hilly and inconvenient in traffic. In other words, a route may not exist between two adjacent villages in the real world. I’ll discuss more in detail in the second part of this study.
 
+
 ### Closeness Centrality
 
 Closeness centrality denotes the reciprocal of the sum of the shortest paths from one node to all other nodes in a network. Such definition is perhaps literally closest to the word “centrality”, like the geometric center. *A node with higher closeness centrality has shorter average distance to all other nodes.* This makes it a good indicator to a potentially good spot for regional logistics centers or emergency evacuates in the real world.
@@ -151,6 +157,7 @@ Below table shows the villages with the highest and lowest closeness centralitie
 {% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_closeness_centrality" %}
 
 Unsurprisingly, the nodes closer to the geometric center of the City have higher values of closeness centralities. However it’s worth noting that some nodes close to the east peripheries seem to have higher values than expected, forming some sort of “eastern corridor” that allows nodes to reach to others faster in an unweighted graph than in the real world. The existence of this “corridor” will be examined in the next part.
+
 
 ### Betweenness Centrality
 
@@ -215,6 +222,7 @@ Below image shows the community detection process from when there are 2 communit
 ![Community detection of Taipei transportation network](/tp_transportation_network/images/community_detection_image.png)
 
 {% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_communities" %}
+
 
 ### Comparing with the administrative districts in the real world
 
