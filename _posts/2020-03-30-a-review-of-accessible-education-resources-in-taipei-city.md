@@ -54,7 +54,6 @@ Previous studies of conventional transportation modeling in Greater Taipei Area 
 
 Taipei City locates in East Asia and is the political and socio-economic capital of Taiwan. Taipei City has a land area of 271.8 square kilometers (about the same size as Orlando, Florida), population of 2.6 million (close to the figure of Chicago), and a population density almost the same as New York City. The GDP (PPP) of Taipei City is estimated to be $300 billion, slightly higher than Atlanta, GA. Chinese Mandarin is the official language, which is why in the rest of this study you will see Chinese characters. This study will try to convert to English when necessary for better reading.
 
-No alt text provided for this image
 ![Quick facts about Taipei City, Taiwan](/tp_transportation_network/images/tp_location.png)
 
 ## THE NETWORK PRESENTATION OF TAIPEI CITY
@@ -74,6 +73,20 @@ After the base map and the 456 villages as nodes are created, the next step is t
 This study runs the checking on each polygon with the other 455 ones. Below table shows the result of connections from village no.0 to no.455. For example, village no.2 has connections with village no.1, 4, 6, 7, 8 and 19. Please note that these edges are undirected, that is, the total number of edges should be half the number showing in the table.
 
 No alt text provided for this image
+|     | dist_neigh   | neighborhoods                                                |
+|----:|:-------------|:-------------------------------------------------------------|
+|   0 | 松山區莊敬里 | [3, 4, 5, 8, 141, 143, 167, 327, 352]                        |
+|   1 | 松山區東榮里 | [2, 7, 8]                                                    |
+|   2 | 松山區三民里 | [1, 4, 6, 7, 8, 19]                                          |
+|   3 | 松山區新益里 | [0, 4, 5]                                                    |
+|   4 | 松山區富錦里 | [0, 2, 3, 5, 6, 8]                                           |
+|   5 | 松山區新東里 | [0, 3, 4, 6, 16, 17, 18, 349, 352]                           |
+| ... |         ... | ...                                                          |
+| 451 | 北投區關渡里 | [386, 431, 450]                                              |
+| 452 | 北投區泉源里 | [422, 439, 440, 442, 453, 454, 455]                          |
+| 453 | 北投區湖山里 | [404, 408, 409, 422, 452, 455]                               |
+| 454 | 北投區大屯里 | [442, 443, 445, 452, 455]                                    |
+| 455 | 北投區湖田里 | [409, 452, 453, 454]                                         |
 
 ### The basic representation of the urban network
 
