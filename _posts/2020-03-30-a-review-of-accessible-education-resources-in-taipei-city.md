@@ -73,26 +73,27 @@ After the base map and the 456 villages as nodes are created, the next step is t
 This study runs the checking on each polygon with the other 455 ones. Below table shows the result of connections from village no.0 to no.455. For example, village no.2 has connections with village no.1, 4, 6, 7, 8 and 19. Please note that these edges are undirected, that is, the total number of edges should be half the number showing in the table.
 
 No alt text provided for this image
-|     | dist_neigh   | neighborhoods                                                |
-|----:|:-------------|:-------------------------------------------------------------|
-|   0 | 松山區莊敬里 | [3, 4, 5, 8, 141, 143, 167, 327, 352]                        |
-|   1 | 松山區東榮里 | [2, 7, 8]                                                    |
-|   2 | 松山區三民里 | [1, 4, 6, 7, 8, 19]                                          |
-|   3 | 松山區新益里 | [0, 4, 5]                                                    |
-|   4 | 松山區富錦里 | [0, 2, 3, 5, 6, 8]                                           |
-|   5 | 松山區新東里 | [0, 3, 4, 6, 16, 17, 18, 349, 352]                           |
-| ... |         ... | ...                                                          |
-| 451 | 北投區關渡里 | [386, 431, 450]                                              |
-| 452 | 北投區泉源里 | [422, 439, 440, 442, 453, 454, 455]                          |
-| 453 | 北投區湖山里 | [404, 408, 409, 422, 452, 455]                               |
-| 454 | 北投區大屯里 | [442, 443, 445, 452, 455]                                    |
-| 455 | 北投區湖田里 | [409, 452, 453, 454]                                         |
+
+|  NO | dist_neigh  | neighborhoods                          |
+|-----|-------------|----------------------------------------|
+|   0 | 松山區莊敬里 | [3, 4, 5, 8, 141, 143, 167, 327, 352]  |
+|   1 | 松山區東榮里 | [2, 7, 8]                              |
+|   2 | 松山區三民里 | [1, 4, 6, 7, 8, 19]                    |
+|   3 | 松山區新益里 | [0, 4, 5]                              |
+|   4 | 松山區富錦里 | [0, 2, 3, 5, 6, 8]                     |
+|   5 | 松山區新東里 | [0, 3, 4, 6, 16, 17, 18, 349, 352]     |
+| ... |         ... | ...                                    |
+| 451 | 北投區關渡里 | [386, 431, 450]                        |
+| 452 | 北投區泉源里 | [422, 439, 440, 442, 453, 454, 455]    |
+| 453 | 北投區湖山里 | [404, 408, 409, 422, 452, 455]         |
+| 454 | 北投區大屯里 | [442, 443, 445, 452, 455]              |
+| 455 | 北投區湖田里 | [409, 452, 453, 454]                   |
 
 ### The basic representation of the urban network
 
 Now with the nodes and edges, a network is presented. Below image is created with **NetworkX** to visualize this urban transportation network of Taipei City. NetworkX is a Python library for studying graphs and networks, which will be used in the next sections of this part of study. However such image is not intuitive for understanding the structure of the network.
 
-No alt text provided for this image
+![basic representation of the urban network](/tp_transportation_network/images/tp_basic_network.png)
 
 I re-create the visualization of the network on the map (showing below), by locating the 456 nodes with their coordinates and connecting the nodes where an edge exists. This map helps find nodes and edges in a certain area more efficiently. Although the analysis results in the next sections won’t be any different whether to use a more friendly interface or not, this stduy hopes to provide another look at the network which brings better understanding for policy makers and for those who are interested.
 
