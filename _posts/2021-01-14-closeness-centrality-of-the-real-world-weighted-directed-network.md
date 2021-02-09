@@ -5,7 +5,7 @@ author: adu
 ---
 
 ### PART III OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
-![cover image](/tp_transportation_network/images/cover_image_2_2.png)
+![cover image](/tp_transportation_network/images/cover_3_1.png)
 
 
 ## PREVIOUSLY ON THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
