@@ -1,6 +1,6 @@
 title: "ADU WORK IN PROGRESS"
 author: "Adu Wu"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Adu's work in data science, spatial analysis and urban planning. "
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -22,7 +22,7 @@ navigation:
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:dub.wu.dub@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/dubidub"}
-  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/adu-t-h-wu-5121767b/"}
+  - {title: LinkedIn, icon: linkedin-in, url: "https://www.linkedin.com/in/adu-t-h-wu-5121767b/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
