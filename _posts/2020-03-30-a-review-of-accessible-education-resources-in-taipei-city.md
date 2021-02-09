@@ -65,7 +65,7 @@ In my previous study regarding accessible education resources, I used the [GeoJS
 
 Below map shows the 456 villages on the map. You may click on the image to view the original map which you can interact with (i.e. zoom in&out, click on the label, etc.).
 
-No alt text provided for this image
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/tp_map" %}
 
 ### The Edges: Connections between villages
 
