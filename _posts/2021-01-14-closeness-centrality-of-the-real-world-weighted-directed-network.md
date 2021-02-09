@@ -6,6 +6,7 @@ author: adu
 
 ### PART III OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
 ![cover image](/tp_transportation_network/images/cover_3_1.png)
+This post first examines Closeness Centrality of the real-world network, and points out potentially highest accessible villages in the City. Though not widely covered in any studies, nodes' weight is also taken into consideration to look at the service coverage problem. The groups of villages that cover a certain amount of population within a given travel time are then identified. 
 
 
 ## PREVIOUSLY ON THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
@@ -53,7 +54,7 @@ Using the travel time provided in the O-D matrix, below table shows the top and 
 
 ![3_Top_and_Bottom_10_Villages_of_Inward_and_Outward_Closeness_Centrality](/tp_transportation_network/images/3_Top_and_Bottom_10_Villages_of_Inward_and_Outward_Closeness_Centrality.png)
 
-Below images show the inward and outward closeness on the map where nodes with a high closeness degree are enlarged. These two images share a lot in common: high-closeness nodes concentrate in-between the mid- and down-town, while peripheral nodes especially those from far uptown are the more distant from the network, for both getting into and out from.
+Below images show the inward (up) and outward (down) closeness on the map where nodes with a high closeness degree are enlarged. These two images share a lot in common: high-closeness nodes concentrate in-between the mid- and down-town, while peripheral nodes especially those from far uptown are the more distant from the network, for both getting into and out from.
 
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/3_incloseness_NEview" %}
 
