@@ -13,7 +13,7 @@ To better simulate the real world, this post reviews, defines and assigns the we
 
 In the first part of this study, an urban transportation network of Taipei City is established, by using the centroids of 456 lǐ’s (aka villages) as the nodes and the connections between two adjacent villages as the edges. A preliminary analysis is then conducted with Social Network Analysis (SNA) methods and tools. Centrality is used to identify key nodes and edges in the network, and community detection is used to provide a reference for the planning of the hierarchy of roads within and between the communities.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/plain_networks" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/plain_networks" %}
 
 This network is unweighted and undirected, and therefore has its limitation, such as:
 
@@ -50,7 +50,7 @@ The population of all villages in the end of 2019 is acquired on the website of 
 
 Below image shows the population of all the villages on the map where bigger nodes have more residents. It’s worth noting that the population of villages in the peripheral areas is not necessarily fewer than those in the center of the city, given that the land area is also bigger.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/assign_node_weight" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/assign_node_weight" %}
 
 
 ## RELOCATION OF THE NODES
@@ -63,7 +63,7 @@ To resolve this issue, one solution is to increase the number of nodes (TAZs). I
 
 A geometric centroid is a decent choice to represent a village when the land area is small enough and the population is distributed more evenly. Here there are still exceptions that need to be taken care of, where the centroids may locate in a river, a zoo, the National Park, the airport, or simply in the middle of nowhere. There’s one centroid not even located within the village because of its unique shape. In these cases, centroids can be misleading.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/problem_centroids" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/problem_centroids" %}
 
 A solution is to find a better location to represent the node of the TAZ. Given that the traffic flow comes from human activities, the choice shall be the spot where most population resides, or where the people have best access to.
 
@@ -93,7 +93,7 @@ The next step is to convert the addresses to geographic coordinates, a process w
 
 Below image shows where these coordinates are located on the map. Obviously not all the results are correct. There are at least two spots far from where they are supposed to be. Geocoding API always returns the most alike results which may be incorrect in some cases if there are no perfect matches for the requested addresses.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/node_relocation" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/node_relocation" %}
 
 The results returned from the Geocoding API are checked where they actually locate, and cross-compare with where they are ought to be. The comparison (below table) shows that 14 sets of coordinates are not within the villages they represent. Two of them are not even in Taipei City, as also shown in above map.
 
@@ -116,7 +116,7 @@ The results returned from the Geocoding API are checked where they actually loca
 
 One by one the addresses of these 14 village offices are examined on their official websites. While nine sets of the coordinates are found wrong and need to be corrected, two offices are indeed located within other villages, two on the borderline of the GeoJSON shapes which happen to be assigned to the other village, and the final one is a typo so that it cannot be matched. The updated location of the village offices are shown below.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/node_relocation_corrected" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/node_relocation_corrected" %}
 
 
 ### Comparing Village Offices’ Location with Geometric Centroids
@@ -191,17 +191,17 @@ Below image is the visualization of the O-D matrix. The color in each cell repre
 
 Based on request conditions, HERE Routing API returns the routes with the least traveling time. The exact route is contained within the response datatype shape as a polyline, which consists of a set of coordinates. Below image shows an example of 455 routes originated from one village only. Without doubt there are lots of duplicated legs of routes which will be used to proceed the SNA methods in the third part of this study.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/assign_edge_weight_1" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/assign_edge_weight_1" %}
 
 Checking the routes originated from the nodes confirms the concerns brought out in the beginning of the study:
 
 **1. A connection may not exist between two adjacent villages**, that is, the shortest path needs to go through yet another village(s). Below image shows all shortest routes originated from one northeastern village. This node has 6 edges in the unweighted and undirected network. However, in real world it relies on only one route to connect with the rest of the network. Such situation is also found in other peripheral nodes as well as those close to a river.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/assign_edge_weight_2" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/assign_edge_weight_2" %}
 
 **2. The shortest path may take routes beyond the scope of the City**. In the routes map originated from one southwestern village showing below, an expressway provides a shorter path connecting to other peripheral villages. This study will discuss more in detail about the calculation of SNA tools in the next part.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/assign_edge_weight_3" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/assign_edge_weight_3" %}
 
 
 ## SUMMARY OF PART TWO
