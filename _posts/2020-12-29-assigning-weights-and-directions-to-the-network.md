@@ -11,7 +11,7 @@ To better simulate the real world, this post reviews, defines and assigns the we
 
 ## PREVIOUSLY ON THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
 
-In the first part of this study, an urban transportation network of Taipei City is established, by using the centroids of 456 lǐ’s (aka villages) as the nodes and the connections between two adjacent villages as the edges. A preliminary analysis is then conducted with Social Network Analysis (SNA) methods and tools. Centrality is used to identify key nodes and edges in the network, and community detection is used to provide a reference for the planning of the hierarchy of roads within and between the communities.
+In [the first part of this study](/blog/an-sna-approach-on-transportation-networks/), an urban transportation network of Taipei City is established, by using the centroids of 456 lǐ’s (aka villages) as the nodes and the connections between two adjacent villages as the edges. A preliminary analysis is then conducted with Social Network Analysis (SNA) methods and tools. Centrality is used to identify key nodes and edges in the network, and community detection is used to provide a reference for the planning of the hierarchy of roads within and between the communities.
 
 {% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/plain_networks" %}
 
@@ -57,7 +57,7 @@ Below image shows the population of all the villages on the map where bigger nod
 
 ### Description
 
-In order to adopt an SNA approach, the nodes are used to represent the villages instead of polygons. In Part One of this study, the geometric centroids are used to denote the nodes of the network on the map. However, the analysis results on this unweighted and undirected network is not affected by the location of the nodes. In fact, it doesn’t matter if a map is used or not. Visualization of the results on the map is for better understanding only. Having said that, *when it comes to assigning weights and directions to the network, the location of the nodes will have significant impact on the weights of the edges.*
+In order to adopt an SNA approach, the nodes are used to represent the villages instead of polygons. In [Part One of this study](/blog/an-sna-approach-on-transportation-networks/), the geometric centroids are used to denote the nodes of the network on the map. However, the analysis results on this unweighted and undirected network is not affected by the location of the nodes. In fact, it doesn’t matter if a map is used or not. Visualization of the results on the map is for better understanding only. Having said that, *when it comes to assigning weights and directions to the network, the location of the nodes will have significant impact on the weights of the edges.*
 
 To resolve this issue, one solution is to increase the number of nodes (TAZs). I’ve replaced the 12 districts commonly used in the conventional model with 456 villages which largely improves the representation of nodes for the villages in the real world. However, there is still room for improvement.
 
