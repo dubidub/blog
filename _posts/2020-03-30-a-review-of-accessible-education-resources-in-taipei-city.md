@@ -1,6 +1,7 @@
 ---
 title:  "An SNA Approach on Transportation Networks"
 layout: post
+author: adu
 ---
 
 ### PART I OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
