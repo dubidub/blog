@@ -26,8 +26,12 @@ show_sidebar: false        # show a sidebar instead of the usual header
 
 # Menu
 navigation:
-  - {file: "index.html", icon: home}
-  - {file: "README.md", icon: address-card}
+  # - {file: "index.html", icon: home}
+  # - {file: "README.md", icon: address-card}
+  - text: Blog
+    url: /blog/
+  - text: Tool
+    url: /tp_landuse/
 
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:dub.wu.dub@gmail.com"}
