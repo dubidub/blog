@@ -56,8 +56,8 @@
 
 {% if site.navigation %}
   {% assign pages = site.navigation %}
-  <link rel="stylesheet" href="{{ "/assets/css/header.css" | relative_url }}">
-  <script src="{{ '/assets/katex/nav.js' | relative_url }}"></script>
+  <!-- <link rel="stylesheet" href="{{ "/assets/css/header.css" | relative_url }}">
+  <script src="{{ '/assets/katex/nav.js' | relative_url }}"></script> -->
 {% else %}
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
@@ -69,11 +69,11 @@
 
 {{ content }}
 
-<!-- {% if site.show_social %}
+{% if site.show_social %}
 <footer>
   <div>{{ site.description | default: site.title }}</div>
   {% include menu.html menu=site.external icon=true %}
 </footer>
-{% endif %} -->
+{% endif %}
 
 </html>
