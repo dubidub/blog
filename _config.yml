@@ -26,11 +26,7 @@ show_sidebar: false        # show a sidebar instead of the usual header
 
 # Menu
 navigation:
-  - text: Home
-    url: /
-  - text: About
-    url: /about/
-  # - {file: "index.html", icon: home}
+  - {file: "index.html", icon: home}
   # - {file: "README.md", icon: address-card}
 
 external:                  # see http://fontawesome.com/icons
