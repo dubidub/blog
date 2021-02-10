@@ -6,7 +6,7 @@ author: adu
 
 ### PART III-(2) OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
 In this post I examine the betweenness centrality of 456 nodes and 2070 edges in the real world transportation network, and identify the potential high-risk traffic zones. Unlike closeness centrality which represents the accessibility of the nodes, betweenness measures the probability of the nodes/edges being used while travelling in the City. In other words, when a node/edge with high betweenness score is removed (blocked), a great number of routes will be affected.
-![cover image](/tp_transportation_network/images/3_1_cover.png)
+[![cover image](/tp_transportation_network/images/3_1_cover.png)](/blog/betweenness-centrality-of-the-real-world-weighted-directed-network/)
 
 
 

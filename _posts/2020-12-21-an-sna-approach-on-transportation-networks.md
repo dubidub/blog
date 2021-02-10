@@ -6,7 +6,7 @@ author: adu
 
 ### PART I OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
 Transportation modeling is at the core of urban transportation planning process. It attempts to simulate human behavior of travelling, estimates the impact of traffic on existing transportation networks, and provides reference for future infrastructure improvement, such as new roads or change of public transit system, for the next decades.
-![cover image](/tp_transportation_network/images/cover_image.png)
+[![cover image](/tp_transportation_network/images/cover_image.png)](/blog/an-sna-approach-on-transportation-networks/)
 
 
 
