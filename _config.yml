@@ -10,7 +10,7 @@ date_format: "%B %d, %Y"
 baseurl: "/blog"
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://dubidub.github.io/"
+url: "https://dubidub.github.io"
 
 # Favicon
 favicon: assets/favicon.png
@@ -29,9 +29,9 @@ navigation:
   # - {file: "index.html", icon: home}
   # - {file: "README.md", icon: address-card}
   - text: Blog
-    url: /blog/
+    url: /blog
   - text: Tool
-    url: /tp_landuse/
+    url: /tp_landuse
 
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:dub.wu.dub@gmail.com"}
