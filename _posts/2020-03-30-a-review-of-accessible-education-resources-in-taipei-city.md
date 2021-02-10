@@ -5,7 +5,7 @@ author: adu
 ---
 
 This is the Capstone project I've done for the learning of IBM Data Science. I had great fun in the field of data science and applying them to the research topic that I'm interested in!
-![Distribution_Clusters_of_Accessible_Education_Resources_per_cap_socio_plus_venue](/blog/assets/tp_transportation/Distribution_Clusters_of_Accessible_Education_Resources_per_cap_socio_plus_venue.png)
+[![Distribution_Clusters_of_Accessible_Education_Resources_per_cap_socio_plus_venue](/blog/assets/tp_transportation/Distribution_Clusters_of_Accessible_Education_Resources_per_cap_socio_plus_venue.png)](https://dubidub.github.io/blog/a-review-of-accessible-education-resources-in-taipei-city/)
 
 
 Education is a global issue that concerns all family across different countries and time span. Parents always put the investment in children’s education in the top of the list. It is so important that almost every country has the compulsory education policy which is usually between 9 to 12 years, throughout primary, middle and high schools. In order to carry out this compulsory obligation of their citizens, governments use the school districts to assign children to schools within each of the districts. However, considering the unevenly distributed socio-economic status of communities, there are usually good school district which parents are more inclined to send their kids to.
@@ -62,7 +62,7 @@ Some wealthier communities don’t necessarily locate in the central part of the
 ![OPERATIONAL DEFINITION OF TERMS](/blog/assets/tp_transportation/OPERATIONAL_DEFINITIONS.png)
 
 
-##DATA ACQUISITION AND CLEANING
+## DATA ACQUISITION AND CLEANING
 
 ### GeoJSON of Taipei Neighborhoods and Their Geometric Centers
 
@@ -242,7 +242,5 @@ Starting from the care of education, this study aims at providing a solid suppor
 
 
 ### SOURCE CODES
-
-All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
 
 A [full report](https://github.com/dubidub/Coursera_Capstone/blob/master/A_Review_of_Accessible_Education_Resources_in_Taipei_City.pdf) and [Notebook](https://github.com/dubidub/Coursera_Capstone/blob/master/A_Review_of_Accessible_Education_Resources_in_Taipei_City.ipynb) containing codes used in this study can be found on my GitHub.
