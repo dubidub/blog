@@ -31,7 +31,7 @@ navigation:
   - text: Blog
     url: /blog
   - text: Tools
-    url: /tools
+    url: /blog/tools
 
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:dub.wu.dub@gmail.com"}
