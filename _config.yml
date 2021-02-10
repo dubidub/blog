@@ -26,7 +26,17 @@ show_sidebar: false        # show a sidebar instead of the usual header
 
 # Menu
 navigation:
-  - {file: "index.html", icon: home}
+  - text: Home
+    url: /
+  - text: About
+    url: /about/
+  - text: Style Guide
+    url: /style-guide/
+  - text: Tags
+    url: /tags/
+  - text: Download
+    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+  # - {file: "index.html", icon: home}
   # - {file: "README.md", icon: address-card}
 
 external:                  # see http://fontawesome.com/icons
