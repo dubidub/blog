@@ -15,6 +15,9 @@ url: "https://dubidub.github.io/"
 # Favicon
 favicon: assets/favicon.png
 
+# Google Analytics id, e.g. "UA-NNNNNNNN-N"
+google_analytics: "G-PLLS8DZLPN"
+
 # Layout
 show_social: true          # show site description and social links in the footer
 show_excerpts: true        # show article excerpts on the home page
