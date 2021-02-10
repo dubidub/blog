@@ -30,8 +30,8 @@ navigation:
   # - {file: "README.md", icon: address-card}
   - text: Blog
     url: /blog
-  - text: Tool
-    url: /tp_landuse
+  - text: Tools
+    url: /tools
 
 external:                  # see http://fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:dub.wu.dub@gmail.com"}

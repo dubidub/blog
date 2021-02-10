@@ -5,8 +5,9 @@ author: adu
 ---
 
 ### PART III-(1) OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
-![cover image](/tp_transportation_network/images/cover_3_1.png)
 This post first examines Closeness Centrality of the real-world network, and points out potentially highest accessible villages in the City. Though not widely covered in any studies, nodes' weight is also taken into consideration to look at the service coverage problem. The groups of villages that cover a certain amount of population within a given travel time are then identified.
+![cover image](/tp_transportation_network/images/cover_3_1.png)
+
 
 
 ## PREVIOUSLY ON THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS

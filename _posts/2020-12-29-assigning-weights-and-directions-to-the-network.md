@@ -5,8 +5,9 @@ author: adu
 ---
 
 ### PART II OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
-![cover image](/tp_transportation_network/images/cover_image_2_2.png)
 To better simulate the real world, this post reviews, defines and assigns the weights and directions to the network. The Geocoding API by Google Maps Platform as well as HERE Routing API are used to acquire the travel data.
+![cover image](/tp_transportation_network/images/cover_image_2_2.png)
+
 
 
 ## PREVIOUSLY ON THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
