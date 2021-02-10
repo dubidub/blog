@@ -68,7 +68,7 @@ Some wealthier communities don’t necessarily locate in the central part of the
 
 This study needs a map containing all neighborhoods' coordinates to work on. Unfortunately such ready-for-use information couldn’t be found during the study. However, there are a few GeoJSON and Shapely file of Taipei City. After searching and comparing different accuracy rate of GeoJSON files, this study uses the GeoJSON file of Taipei contributed by littlebtc, as the infrastructure which this study will be constructed upon. Using GeoJSON instead of the coordinates also brings the benefits of better visualization effect on the map.
 
-![Taipei GeoJSON](/blog/assets/tp_transportation/1.png)
+![Taipei GeoJSON](/blog/assets/tp_transportation/1.PNG)
 
 The next task is to calculate the geometric center of each neighborhood polygon within the GeoJSON file, which I will use as the reference point to explore venues on Foursquare.
 
@@ -87,19 +87,19 @@ The household income data is read from an excel file. Some of the titles of colu
 
 The table shows the required information for later study, where dist_neigh, under_15 and income_median represent the neighborhood, population under 15, and the median value of household income.
 
-![population and income](/blog/assets/tp_transportation/4.png)
+![population and income](/blog/assets/tp_transportation/4.PNG)
 
 When comparing with the original GeoJSON data where there are 456 neighborhoods, the new dataframe contains only 451. The five missing neighborhoods could be because of the lack of the socio-economic data, change of administration neighborhoods or any other reasons, which is beyond the scope of this study.
 
 Quickly checking the distribution of the population and household income of the neighborhoods, both figures show right-skewed distribution, meaning that they have longer tails to the right. In such case median instead of mean value could usually be a better choice to represent the group.
 
-![population and income histogram](/blog/assets/tp_transportation/9.png)
+![population and income histogram](/blog/assets/tp_transportation/9.PNG)
 
 Below figures show how the neighborhoods distributed geometrically. The upper one shows the distribution of household income while the other shows population of under 15.
 
-![income distribution](/blog/assets/tp_transportation/10.png)
+![income distribution](/blog/assets/tp_transportation/10.PNG)
 
-![population distribution](/blog/assets/tp_transportation/11.png)
+![population distribution](/blog/assets/tp_transportation/11.PNG)
 
 When visualizing the data on map, it's hard not to notice that how similar these two figures are. Is it possible that household income and population under 15 are correlated for an unknown reason? Does wealthier family tend to have more kids than others? These topics are certainly deserved a more careful look in the future.
 
