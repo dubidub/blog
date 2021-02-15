@@ -168,7 +168,7 @@ Showing below are images from both unweighted (left) and weighted (right) networ
 
 Below image shows the nodes and edges both resized by their betweenness scores at the same time.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/3_nodes_edges_betweenness_2" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/3_nodes_edges_betweenness_2" %}
 
 
 ### Redundant Edges
@@ -179,7 +179,7 @@ Comparing the edges created in the unweighted network with edges used in the wei
 
 Below image shows these edges on the map. The reason why the direct routes are not the shortest paths could be that these routes are traffic detours or they simply don’t exist. Such occasions happen in the peripheral hilly areas, or between villages separated by rivers, military bases or the airport.
 
-{% include embed.html url="http://dubidub.github.io/tp_transportation_network/resources/3_missing_edges_polygon_2" %}
+{% include embed.html url="https://dubidub.github.io/tp_transportation_network/resources/3_missing_edges_polygon_2" %}
 
 [![3_1_Redundant_Edges](/tp_transportation_network/images/3_1_Redundant_Edges.png)](https://dubidub.github.io/tp_transportation_network/resources/3_missing_routes_2)
 
