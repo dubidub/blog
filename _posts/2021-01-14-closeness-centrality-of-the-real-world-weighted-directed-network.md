@@ -120,7 +120,7 @@ This post uses the SNA closeness centrality measure to run the analysis on the r
 
 This post further uses the population as the nodes’ weight to look in detail at the service coverage problem. Given different service coverage conditions, that is, a certain population within a certain travel time, this post shows that different groups of villages can be found within the City.
 
-In the next post of Part III, this study will continue the analysis on the other vital SNA tool – betweenness centrality, which is arguably the best measure and indicator to reflect the traffic condition of the real world. By using the travel routes retrieved in [Part II](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/), next post will show the likelihood of each node and edge being used when travelling in the network, that is, the potential higher traffic areas that may need immediate improvement.
+In the next [post of Part III](https://dubidub.github.io/blog/betweenness-centrality-of-the-real-world-weighted-directed-network/), this study will continue the analysis on the other vital SNA tool – betweenness centrality, which is arguably the best measure and indicator to reflect the traffic condition of the real world. By using the travel routes retrieved in [Part II](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/), next post will show the likelihood of each node and edge being used when travelling in the network, that is, the potential higher traffic areas that may need immediate improvement.
 
 ### SOURCE CODES
 

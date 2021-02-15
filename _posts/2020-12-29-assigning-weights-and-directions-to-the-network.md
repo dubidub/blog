@@ -212,7 +212,7 @@ The weight of a node is defined as the number of residents in the village, which
 
 The weight and direction of an edge is defined as the traffic time between two nodes, which reflects the accessibility and travel cost. The traffic time difference between peak hours and off-peak hours will also be used to provide a reference for transportation improvement in future. In this study, car is used as the vehicle for the calculation of the traffic time.
 
-In next part of this study, the SNA methods and tools will be used to analyze this weighted directed network.
+In [next part of this study](https://dubidub.github.io/blog/closeness-centrality-of-the-real-world-weighted-directed-network/), the SNA methods and tools will be used to analyze this weighted directed network.
 
 
 ### SOURCE CODES
