@@ -129,4 +129,4 @@ In the next and last post of this series of study, the employment as well as the
 
 ### SOURCE CODES
 
-All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
+All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1OIl7DUTfBS7l7uhBwOqqcaOfQxJC4MeP?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/4_1_Implications_for_Urban_Transportation_Planning_(1).ipynb).
