@@ -193,7 +193,7 @@ Having said that, betweenness centrality can only measure the probability and ha
 1. *The probability could change significantly when taking weights of nodes into consideration*. For example, the highest betweenness score of nodes in this post is about 0.26, meaning the node will be used in 26% of the routes. Assume that all origins and destinations included in these routes only account for 1% of the City’s population while 99% distribute in the rest of the villages. Under such extreme condition, the node with the highest betweenness score may not need any further attention.
 2. *The traffic condition between peak and off-peak hours is not considered*. It is hard to tell which of the followings needs immediate improvement: an edge with the highest betweenness score and 5% travel-time delay in rush hours, or another edge ranked 51st in betweenness but 500% worse in traffic time during rush hours.
 
-In Part IV, the weights of nodes as well as the traffic time difference between peak and off-peak hours will be introduced to identify the potential high-risk areas.
+In [Part IV](implications-for-urban-transportation-planning/), the weights of nodes as well as the traffic time difference between peak and off-peak hours will be introduced to identify the potential high-risk areas.
 
 
 ### SOURCE CODES

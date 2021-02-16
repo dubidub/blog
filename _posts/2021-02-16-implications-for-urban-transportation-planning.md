@@ -6,7 +6,8 @@ author: adu
 
 ### PART IV-(1) OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
 
-[![cover image](/tp_transportation_network/images/cover_image_4_1.png)](/blog/an-sna-approach-on-transportation-networks/)
+[![cover image](/tp_transportation_network/images/cover_image_4_1.png)](/blog/implications-for-urban-transportation-planning/)
+
 
 
 ## PREVIOUSLY ON THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
@@ -29,17 +30,17 @@ In [Part II of the study](https://dubidub.github.io/blog/assigning-weights-and-d
 
 |    | origin       | destination   |   baseTime |   trafficTime |   delay |
 |---|-------------|--------------|-----------|--------------|--------------------|
-|  0 | 中山區下埤里 | 中山區下埤里  |          0 |             0 |            0        |
-|  1 | 中山區下埤里 | 中山區中原里  |        516 |           574 |            0.112 |
-|  2 | 中山區下埤里 | 中山區中吉里  |        412 |           467 |            0.133 |
-|  3 | 中山區下埤里 | 中山區中央里  |        418 |           461 |            0.103 |
-|  4 | 中山區下埤里 | 中山區中山里  |        596 |           657 |            0.102 |
+|  0 | Xiabi Vil. | Xiabi Vil.  |          0 |             0 |            0        |
+|  1 | Xiabi Vil. | Zhongyuan Vil.  |        516 |           574 |            0.112 |
+|  2 | Xiabi Vil. | Zhongji Vil.  |        412 |           467 |            0.133 |
+|  3 | Xiabi Vil. | Zhongyang Vil.  |        418 |           461 |            0.103 |
+|  4 | Xiabi Vil. | Zhongshan Vil.  |        596 |           657 |            0.102 |
 |     ...| ...       | ...   |   ... |   ... |   ... |
-| 207931 | 萬華區騰雲里 | 萬華區錦德里  |        433 |           455 |           0.051 |
-| 207932 | 萬華區騰雲里 | 萬華區雙園里  |        289 |           337 |           0.166   |
-| 207933 | 萬華區騰雲里 | 萬華區青山里  |        468 |           580 |           0.239  |
-| 207934 | 萬華區騰雲里 | 萬華區頂碩里  |        218 |           260 |           0.193  |
-| 207935 | 萬華區騰雲里 | 萬華區騰雲里  |          0 |             0 |           0         |
+| 207931 | Tengyun Vil. | Jinde Vil.  |        433 |           455 |           0.051 |
+| 207932 | Tengyun Vil. | Shuangyuan Vil.  |        289 |           337 |           0.166   |
+| 207933 | Tengyun Vil. | Qingshan Vil.  |        468 |           580 |           0.239  |
+| 207934 | Tengyun Vil. | Dingshuo Vil.  |        218 |           260 |           0.193  |
+| 207935 | Tengyun Vil. | Tengyun Vil.  |          0 |             0 |           0         |
 
 Below figure illustrates the frequency distribution of travel-time delay of these 207,936 routes. Most routes have the delay time between 0.12 and 0.38, meaning that travelling during peak hours would take 12% to 38% more time. Note that this distribution is right-skewed and have a very long tail. Some routes have much worse travel-time delay and would take almost double time to complete the trip.
 
