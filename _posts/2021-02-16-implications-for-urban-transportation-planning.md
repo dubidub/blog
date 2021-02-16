@@ -5,6 +5,7 @@ author: adu
 ---
 
 ### PART IV-(1) OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
+The travel-time delay of all 207,936 routes, 456 villages and 2,070 edges within the network of the City is calculated, visualized and discussed. This post identifies the villages as well as the edges with relatively bad traffic condition during morning peak time.
 
 [![cover image](/tp_transportation_network/images/cover_image_4_1.png)](/blog/implications-for-urban-transportation-planning/)
 
