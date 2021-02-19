@@ -5,11 +5,14 @@ author: adu
 ---
 
 **使用語言**: Python, JavaScript
+
 **工具、套件**: Folium
+
 **資料來源**: 委託方提供
+
 **需求**: 輸入都市計畫特定專用區地塊的 ObjectID 以快速查詢該地塊資料，包含以地圖顯示位置、使用分區、面積、開發情況等。
 
-[![cover image](/industry_land/SPDcover.png)](/industry_land/specificPurposeDistricts/)
+[![cover image](/industry_land/SPDcover.png)](/industry_land/specificPurposeDistricts)
 
 
 ## 匯入資料: SHP or GeoJSON
@@ -99,25 +102,25 @@ GeoJSON 的限制在於僅能使用 WGS1984 座標參考系統，因此在面積
 
 有了這個已經載入 GeoJSON 資料的地圖網頁後，接下來的任務便直接移動到網頁前端編寫 JavaScript 的程式碼建立互動查詢。
 
-#### 1.	資料輸入方式: 彈出視窗
+### 1.	資料輸入方式: 彈出視窗
 
 第一步在網頁載入時要求使用者輸入地塊的 Object ID 進行查詢。
 
 ![input_data](/industry_land/images/input_data.png)
 
-#### 2.	輸入錯誤
+### 2.	輸入錯誤
 
 若使用者輸入 ID 不正確或是未輸入任何 ID 時將跳出錯誤信息。如要再次輸入 ID 則須重新載入網頁。
 
 ![input_error](/industry_land/images/input_error.png)
 
-#### 3.	輸入正確
+### 3.	輸入正確
 
 輸入正確代碼後，地圖將自動 zoom in 到該地塊位置，該地塊並以其他顏色強調呈現。
 
 ![input_successful](/industry_land/images/input_successful.png)
 
-#### 4.	加入物件資料彈出視窗
+### 4.	加入物件資料彈出視窗
 
 最後加入點擊地塊後便會出現該地塊所有屬性資料即大功告成。
 
