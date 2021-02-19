@@ -4,6 +4,14 @@ permalink: "/tools"
 layout: page
 ---
 
+<form action="https://stackoverflow.com/" method="get" target="_blank"><button type="submit">Click me</button></form>
+
+<button onclick="window.location.href='https://bing.com';">Click</button>
+
+[Click me](http://www.google.com){: .btn}
+
+<button name="button" onclick="http://www.google.com">Click me</button>
+
 | 台灣都市計畫特定專用區快速查詢系統 |
 |-------|
 | 輸入都市計畫特定專用區地塊的 ObjectID 以快速查詢該地塊資料，包含以地圖顯示位置、使用分區、面積、開發情況等。 |
