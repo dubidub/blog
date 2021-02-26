@@ -23,13 +23,13 @@ author: adu
 
 全球航線快速查詢系統（Flight Routes Finder）使用的機場、航空公司以及航線資料均來自於 [OpenFlights](https://openflights.org/data.html) 這個開源的工具。其中，[機場資料庫](https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat)有 7,698 筆資料，包含機場名稱、IATA 代號、所在城市與國家以及經緯度等資料；[航空公司資料庫](https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat)有 6,162 筆資料，包含各航空公司名稱、IATA 代號與所在國家等。
 
-{% include embed.html url="https://dubidub.github.io/flight_routes_finder/resources/airports" %}
+![all airports](/flight_routes_finder/resources/airports.png)
 
 最重要的[航線資料庫](https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat)共有 67,663 筆資料，包含起訖機場與航空公司等資料。**需要特別注意，OpenFlights 用來獲取航線資訊的服務已於 2014 年停止更新**，非常可惜；因此，系統的搜尋結果將可能會出現早已停飛的歷史航線資料，或是 2014 年後新增的航線。
 
 進一步觀察航線資料庫，將近 7 萬筆的航線資料 548 個不同的航空公司執飛（同樣地，可能出現某些早已停飛的航空公司，如 US Airways），往返於全球 3,321 個機場。這些航線資料中僅有11筆顯示有中轉站，其餘皆為直飛航班；換句話說，對於中停至少一站以上的航線，這裡必須自行撰寫航段組成的演算法。
 
-{% include embed.html url="https://dubidub.github.io/flight_routes_finder/resources/routes" %}
+![all routes](/flight_routes_finder/resources/routes.png)
 
 
 ## 航線規劃與資料結構: Python, Javascript
