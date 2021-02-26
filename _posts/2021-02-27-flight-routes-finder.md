@@ -15,7 +15,7 @@ author: adu
 
 <form action="https://dubidub.github.io/flight_routes_finder" method="get" target="_blank"><button type="submit">全球航線快速查詢系統</button></form>
 
-[![cover image](/flight_routes_finder/twostops.png)](/flight_routes_finder)
+[![cover image](/flight_routes_finder/resources/twostops.png)](/flight_routes_finder)
 
 
 
@@ -56,7 +56,7 @@ author: adu
 
 Leaflet 提供給網頁應用來建構地圖的開源 Javascript 庫，使用者包括 FourSquare、Pinterest、Flickr 等；我在過去文章裡也常用來作分析資料的呈現。Leaflet 使用上相當簡單，只需要簡單幾行程式碼就能在網頁中插入如下圖的線段、資料點與彈出視窗。然 Leaflet 的限制在於僅供顯示經度 -180 到 180 度的區間，因此在沒有另加處理的情況下將無法呈現跨越換日線的圖形，是美中不足之處。
 
-![leaflet](/flight_routes_finder/leaflet.png)
+![leaflet](/flight_routes_finder/resources/leaflet.png)
 
 
 ## 互動機制: Javascript
@@ -67,7 +67,7 @@ Leaflet 提供給網頁應用來建構地圖的開源 Javascript 庫，使用者
 
 在選擇好出發地機場後，地圖會呈現該機場所有直達航線以及中轉一次可到達的機場，使用者可直接拉拽地圖查看。
 
-![input origin](/flight_routes_finder/inputorigin.png)
+![input origin](/flight_routes_finder/resources/inputorigin.png)
 
 ### 2. 輸入到達地
 
@@ -75,17 +75,17 @@ Leaflet 提供給網頁應用來建構地圖的開源 Javascript 庫，使用者
 
 在兩地有直航班次的情況下，地圖將直接彈出視窗呈現執飛航空公司以及兩地距離等資訊。其中距離的計算使用兩點間的大圓弧線，以避免直接使用經緯度產生的誤差。然*需要注意的是此處距離並不等同於實際飛行路線的距離*。
 
-![direct flight](/flight_routes_finder/direct.png)
+![direct flight](/flight_routes_finder/resources/direct.png)
 
 ***中轉***
 
 當兩地間不存在直達航線時將呈現中轉航線，並優先顯示距離最短的航線。使用者可點選其他中轉地查看其他航線。
 
-![one stop](/flight_routes_finder/onestop.png)
+![one stop](/flight_routes_finder/resources/onestop.png)
 
 中轉兩次的航線通常會顯得更為眼花撩亂。
 
-![two stops](/flight_routes_finder/twostops.png)
+![two stops](/flight_routes_finder/resources/twostops.png)
 
 搜尋功能還算比較簡單而陽春，並未特別編寫支援一般ＯＴＡ的常見功能，如航空聯盟篩選、對有直航的航線強制搜尋中轉航線、同城市不同機場的中轉航線等進階功能（如由HND前往NRT轉機、DMK往BKK轉機等）。
 

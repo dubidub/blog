@@ -7,7 +7,7 @@ layout: page
 | 全球航線快速查詢系統（Flight Routes Finder） |
 |-------|
 | 簡單輸入起訖地機場，即可查詢兩點間所有理論上存在的航線（最多中轉兩次）。 |
-| [![cover image](/flight_routes_finder/twostops.png)](https://dubidub.github.io/flight_routes_finder) |
+| [![cover image](/flight_routes_finder/resources/twostops.png)](https://dubidub.github.io/flight_routes_finder) |
 
 ---
 
