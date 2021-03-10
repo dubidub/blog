@@ -41,7 +41,7 @@ author: adu
 
 點擊選擇檔案選取需要上傳的檔案，你可以使用自己的檔案，或者載入準備好的範例檔案。由於台灣村里界檔案頗大(約60MB)，因此載入時間稍長(約10秒)。載入完成後將會看到村里界線的圖資顯示在地圖上。
 
-![step1](/geospatial_visualization/resources/step1.png)
+![step1](/geospatial_visualization/resources/step1.gif)
 
 ### 第二步 選擇資料編號欄位
 
@@ -51,13 +51,13 @@ author: adu
 
 指定資料欄位後下一步你可以直接輸入資料編號快速搜尋該筆資料。
 
-![step2](/geospatial_visualization/resources/step2.png)
+![step2](/geospatial_visualization/resources/step2.gif)
 
 ### 第四步 使用其他欄位篩選資料
 
 如果不清楚資料編號，也可以利用篩選器讓系統列出想要的符合範圍的資料後，點選資料編號以搜尋地圖定位。
 
-![step4](/geospatial_visualization/resources/step4.png)
+![step4](/geospatial_visualization/resources/step4.gif)
 
 
 ## 資料安全
