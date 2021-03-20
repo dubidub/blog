@@ -7,7 +7,7 @@ layout: page
 | 互動式地圖資料庫視覺化工具 |
 |-------|
 | 使用者自行上傳地理圖資資料，藉由此互動式工具快速對照資料庫資訊與地理空間資訊。 |
-| [![cover image](/geospatial_visualization/cover.PNG)](https://dubidub.github.io/geospatial_visualization) |
+| [![cover image](/geospatial_visualization/resources/cover.png)](https://dubidub.github.io/geospatial_visualization) |
 
 ---
 
