@@ -4,6 +4,13 @@ permalink: "/tools"
 layout: page
 ---
 
+| 2020 全國交通事故地圖 |
+|-------|
+| 將2020年台灣交通事故斑點圖視覺化，快速定位交通事故熱區。 |
+| [![cover image](/traffic_accident_2020/cover.PNG)](https://dubidub.github.io/traffic_accident_2020/zh_tw) |
+
+---
+
 | 互動式地圖資料庫視覺化工具 |
 |-------|
 | 使用者自行上傳地理圖資資料，藉由此互動式工具快速對照資料庫資訊與地理空間資訊。 |
