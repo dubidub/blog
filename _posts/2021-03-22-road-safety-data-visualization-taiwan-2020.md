@@ -13,7 +13,7 @@ author: adu
 
 <form action="https://dubidub.github.io/traffic_accident_2020/zh_tw" method="get" target="_blank"><button type="submit">2020 全國交通事故地圖</button></form>
 
-[![cover image](/traffic_accident_2020/cover.png)](/traffic_accident_2020/zh_tw)
+[![cover image](/traffic_accident_2020/cover.PNG)](/traffic_accident_2020/zh_tw)
 
 
 幾周前在研究資料視覺化工具時，曾快速建立了台北、台中、高雄三個城市的2019年交通事故視覺呈現。但僅提供初步的資料呈現。警政署在3月初更新了2020年全台灣的交通事故統計資料，藉著這次機會重新整理建立了《**2020全國交通事故地圖**》。新版本讓使用者可以主動查詢全台灣22個縣市的交通事故資料；透過篩選器，可進一步搜尋死亡車禍、肇事車種、月份、24小時高風險時段等事故地圖。
@@ -147,7 +147,7 @@ author: adu
 
 開啟時間軸後可以調整時間軸長短進行播放，以查看不同時間的交通事故熱區。
  
-![timeline filter](/traffic_accident_2020/resources/timelineFiler.gif)
+![timeline filter](/traffic_accident_2020/resources/timelineFilter.gif)
 
 
 
