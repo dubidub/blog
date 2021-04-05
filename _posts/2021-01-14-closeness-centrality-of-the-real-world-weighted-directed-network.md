@@ -122,11 +122,13 @@ This post further uses the population as the nodes’ weight to look in detail a
 
 In the next [post of Part III](https://dubidub.github.io/blog/betweenness-centrality-of-the-real-world-weighted-directed-network/), this study will continue the analysis on the other vital SNA tool – betweenness centrality, which is arguably the best measure and indicator to reflect the traffic condition of the real world. By using the travel routes retrieved in [Part II](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/), next post will show the likelihood of each node and edge being used when travelling in the network, that is, the potential higher traffic areas that may need immediate improvement.
 
-### SOURCE CODES
+## SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/17TvePKikf8QC_Qabm52o62AmIYbTqDEv?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/3_1_Real_World_Closeness.ipynb).
 
- 
+
+## INDEX
+
 | THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
 |:---|
 | PART I. [　A Social Network Analysis Approach](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/) |

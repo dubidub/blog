@@ -215,11 +215,13 @@ The weight and direction of an edge is defined as the traffic time between two n
 In [next part of this study](https://dubidub.github.io/blog/closeness-centrality-of-the-real-world-weighted-directed-network/), the SNA methods and tools will be used to analyze this weighted directed network.
 
 
-### SOURCE CODES
+## SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1FzgrPBKmz7Z5h64n9qE54KGl_J2FG7ED?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/2_Assigning_weights_and_directions_to_the_network.ipynb).
 
- 
+
+## INDEX
+
 | THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
 |:---|
 | PART I. [　A Social Network Analysis Approach](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/) |

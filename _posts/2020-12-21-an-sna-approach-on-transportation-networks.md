@@ -249,11 +249,13 @@ This study then uses SNA methods and tools on the network. Centrality is used to
 In the [next part of this study](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/), the urban transportation network will be reviewed and revised. Weights and directions will be defined and assigned to the nodes and edges. The location of the nodes will also be reviewed and updated with new coordinates so as to provide a better simulation of the real world.
 
 
-### SOURCE CODES
+## SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
 
- 
+
+## INDEX
+
 | THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
 |:---|
 | **PART I. 　A SOCIAL NETWORK ANALYSIS APPROACH** |

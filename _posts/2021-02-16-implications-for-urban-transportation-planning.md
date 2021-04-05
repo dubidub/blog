@@ -127,11 +127,13 @@ In this post, the travel-time delay of all 207,936 routes, 456 villages and 2,07
 In the next and last post of this series of study, the employment as well as the residents of the villages will be taken into consideration, serving as the pull and push force of the traffic flow. Finally, by integrating the findings of betweenness (as the probability of network usage), the travel-time delay (as the indicator to the sufficiency of infrastructure) and the nodes' weights (as the demand and supply of the traffic flow), this study will conclude and identify the key zones in need of the immediately improvement.
 
 
-### SOURCE CODES
+## SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1OIl7DUTfBS7l7uhBwOqqcaOfQxJC4MeP?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/4_1_Implications_for_Urban_Transportation_Planning_(1).ipynb).
 
- 
+
+## INDEX
+
 | THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
 |:---|
 | PART I. [　A Social Network Analysis Approach](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/) |
