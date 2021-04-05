@@ -1,5 +1,5 @@
 ---
-title:  "Implications for Urban Transportation Planning (1)"
+title:  "Implications for Urban Transportation Planning (1): Travel-Time Delay"
 layout: post
 author: adu
 ---
