@@ -252,3 +252,11 @@ In the [next part of this study](https://dubidub.github.io/blog/an-sna-approach-
 ### SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1itojB5DPhePhcNLkehzAX08va5ylPQRI?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS).
+
+ 
+| THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
+|:---|
+| **PART I. 　A SOCIAL NETWORK ANALYSIS APPROACH** |
+| PART II. [　Assigning Weights and Directions to the Network](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/) |
+| PART III. 　Measurements of the Weighted and Directed Network <br> [　(1) Closeness Centrality](https://dubidub.github.io/blog/closeness-centrality-of-the-real-world-weighted-directed-network/) <br> [　(2) Betweenness Centrality](https://dubidub.github.io/blog/betweenness-centrality-of-the-real-world-weighted-directed-network/) |
+| PART IV. 　Implications for Urban Transportaion Planning <br>[　(1) Travel Time Delay](https://dubidub.github.io/blog/implications-for-urban-transportation-planning/)  <br> [　(2) Analysis and Conclusion](https://dubidub.github.io/blog/implications-for-urban-transportation-planning-2/) |

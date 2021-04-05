@@ -125,3 +125,11 @@ In the next [post of Part III](https://dubidub.github.io/blog/betweenness-centra
 ### SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/17TvePKikf8QC_Qabm52o62AmIYbTqDEv?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/3_1_Real_World_Closeness.ipynb).
+
+ 
+| THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
+|:---|
+| PART I. [　A Social Network Analysis Approach](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/) |
+| PART II. [　Assigning Weights and Directions to the Network](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/) |
+| **PART III. 　MEASUREMENTS OF THE WEIGHTED AND DIRECTED NETWORK** <br> **　(1) CLOSENESS CENTRALITY** <br> [　(2) Betweenness Centrality](https://dubidub.github.io/blog/betweenness-centrality-of-the-real-world-weighted-directed-network/) |
+| PART IV. 　Implications for Urban Transportaion Planning <br>[　(1) Travel Time Delay](https://dubidub.github.io/blog/implications-for-urban-transportation-planning/)  <br> [　(2) Analysis and Conclusion](https://dubidub.github.io/blog/implications-for-urban-transportation-planning-2/) |

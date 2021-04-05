@@ -199,3 +199,12 @@ In [Part IV](implications-for-urban-transportation-planning/), the weights of no
 ### SOURCE CODES
 
 All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1GIyG9QLi-Qz1vist0r8FP0BNKZrrVagZ) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/3_2_Real_World_Betweenness.ipynb).
+
+ 
+ 
+| THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
+|:---|
+| PART I. [　A Social Network Analysis Approach](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/) |
+| PART II. [　Assigning Weights and Directions to the Network](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/) |
+| **PART III. 　MEASUREMENTS OF THE WEIGHTED AND DIRECTED NETWORK** <br> [　(1) Closeness Centrality](https://dubidub.github.io/blog/closeness-centrality-of-the-real-world-weighted-directed-network/) <br> **　(2) BETWEENNESS CENTRALITY** |
+| PART IV. 　Implications for Urban Transportaion Planning <br>[　(1) Travel Time Delay](https://dubidub.github.io/blog/implications-for-urban-transportation-planning/)  <br> [　(2) Analysis and Conclusion](https://dubidub.github.io/blog/implications-for-urban-transportation-planning-2/) |
