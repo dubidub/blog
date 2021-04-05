@@ -14,10 +14,10 @@ In the final post of this series of study, all key variables will be adjusted by
 
 | THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATIONS NETWORKS |
 |:---|
-| PART I. [A Social Network Analysis Approach](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/) |
-| PART II. [Assigning Weights and Directions to the Network](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/) |
-| PART III. Measurements of the Weighted and Directed Network <br> [(1) Closeness Centrality](https://dubidub.github.io/blog/closeness-centrality-of-the-real-world-weighted-directed-network/) <br> [(2) Betweenness Centrality](https://dubidub.github.io/blog/betweenness-centrality-of-the-real-world-weighted-directed-network/) |
-| **PART IV. IMPLICATIONS FOR URBAN TRANSPORTATION PLANNING** <br> **(1) TRAVEL TIME DELAY** <br> [(2) Analysis and Conclusion](https://dubidub.github.io/blog/implications-for-urban-transportation-planning-2/) |
+| PART I. [　A Social Network Analysis Approach](https://dubidub.github.io/blog/an-sna-approach-on-transportation-networks/) |
+| PART II. [　Assigning Weights and Directions to the Network](https://dubidub.github.io/blog/assigning-weights-and-directions-to-the-network/) |
+| PART III. 　Measurements of the Weighted and Directed Network <br> [　　(1) Closeness Centrality](https://dubidub.github.io/blog/closeness-centrality-of-the-real-world-weighted-directed-network/) <br> [　　(2) Betweenness Centrality](https://dubidub.github.io/blog/betweenness-centrality-of-the-real-world-weighted-directed-network/) |
+| **PART IV. IMPLICATIONS FOR URBAN TRANSPORTATION PLANNING** <br> **　　(1) TRAVEL TIME DELAY** <br> [　　(2) Analysis and Conclusion](https://dubidub.github.io/blog/implications-for-urban-transportation-planning-2/) |
 
 ## PREVIOUSLY ON THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
 
