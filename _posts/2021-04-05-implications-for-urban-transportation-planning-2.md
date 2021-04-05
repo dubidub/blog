@@ -6,6 +6,7 @@ author: adu
 
 ### PART IV-(2) OF THE REPRESENTATION AND MEASUREMENTS OF URBAN TRANSPORTATION NETWORKS
 
+In the final post of this series of study, all key variables will be adjusted by the weights of nodes and integrated into the machine learning model. This post will conclude with the findings of key nodes/edges (among all 456 nodes and 2070 edges in the network) which shall have the top priority for improvement or investment in transportation infrastructure. 
 
 [![cover](/tp_transportation_network/images/final_cover.png)](/blog/implications-for-urban-transportation-planning-2/)
 
@@ -276,6 +277,6 @@ The conventional transportation forecasting model has a history of 70 years. To 
 
 
  
-### SOURCE CODES
+## SOURCE CODES
 
-All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1OIl7DUTfBS7l7uhBwOqqcaOfQxJC4MeP?usp=sharing) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/4_1_Implications_for_Urban_Transportation_Planning_(1).ipynb).
+All source codes used in this post can be found on [Colab](https://colab.research.google.com/drive/1mhypRfJdCoDHwIc9LDmnbQnrKqAJq60U#scrollTo=xau2O5S5ZRNI) or my [GitHub](https://github.com/dubidub/THE-REPRESENTATION-AND-MEASUREMENTS-OF-URBAN-TRANSPORTATION-NETWORKS/blob/main/4_2_Analysis_and_Conclusion.ipynb).
