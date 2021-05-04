@@ -6,7 +6,7 @@ author: adu
 
 **使用語言**: JavaScript
 
-**工具、套件**: Leaflet.js
+**工具、套件**: Leaflet, DataTables
 
 **簡介**:
 GIS Online 是免費的線上地圖資訊系統。使用者可自行上傳含有地圖空間資料之資料庫、自訂圖資呈現效果、最後匯出成果HTML檔案以供保存或分享。
