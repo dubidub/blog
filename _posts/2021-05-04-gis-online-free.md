@@ -40,7 +40,7 @@ GIS Online 是免費的線上地圖資訊系統。使用者可自行上傳含有
 
 ![blog-1-landing](/gis-online-free/resources/blog-1-landing.png)
 
-如果手邊沒有符合的檔案的話，使用者也可以載入我過去幾個月整理好的資料庫。接下來將以**2020年台灣死亡交通事故(A1)資料庫**（資料來源: [政府資料開放平台](https://data.gov.tw/dataset/12197)）做示範。
+如果手邊沒有檔案的話，使用者也可以載入預建好的範例資料庫。接下來將以**2020年台灣死亡交通事故(A1)資料庫**（資料來源：[政府資料開放平台](https://data.gov.tw/dataset/12197)）做示範。
 
 ![blog-2-load](/gis-online-free/resources/blog-2-load.png)
 
